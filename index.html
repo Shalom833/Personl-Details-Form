@@ -4,25 +4,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Personal details</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <h1>Personal Details Form</h1>
+    <h1>Let's find out more abaout you!</h1>
     <form>
-        <label>Name</label><br>
-        <input type="text" id="name"><br><br>
-        <label>Email ID</label><br>
-        <input type="text" id="email"><br><br>
-        <label>password (This will be hidden)</label><br>
-        <input type="password" id="contact"><br><br>
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <label>Name</label><br>
+            <input type="text" id="name" placeholder="Enter full name"><br><br>
+            <label>Email ID</label><br>
+            <input type="text" id="email" placeholder="example@gmail.com"><br><br>
+            <label>password (This will be hidden)</label><br>
+            <input type="Password" id="Password" placeholder="use strong password"><br><br>
+            <label>Grade</label><br>
+            <input type="number" id="Grade"><br><br>
+            <label>Favourite Movie/Music</label><br>
+            <input type="text" id="movie/music name" placeholder="(optional)"><br><br>
+            <label>Hobbies</label><br>
+            <select name="Hobbies" id="Hobbies">
+                <option value="photography">Photography</option>
+                <option value="Hiking">Hiking</option>
+                <option value="painting">Painting</option>
+                <option value="writing">Writing</option>
+                <option value="football">Football</option>
+                <option value="soccer">Soccer</option>
+            </select>
+        </fieldset><br>
+
         <label>Gender</label><br>
         <input type="radio" id="female" name="gender" value="Female">Female<br>
-        <input type="radio" id="male" name="gender" value="Male">Male<br><br>
-        <label>Favourite City</label><br>
-        <input type="checkbox" id="city" value="New Delhi">New Delhi<br>
-        <input type="checkbox" id="city" value="Mumbai">Mumbai<br><br>
+        <input type="radio" id="male" name="gender" value="Male">Male<br><br><hr>
+        <label>Favourite City/State</label><br>
+        <input type="checkbox" id="city" value="Manhattan">Manhattan<br>
+        <input type="checkbox" id="city" value="Brooklyn">Brooklyn<br>
+        <input type="checkbox" id="city" value="Montgomery">Montgomery<br><br><hr>
         <input type="submit">
     </form>
 </body>
